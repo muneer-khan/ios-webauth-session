@@ -6,4 +6,13 @@ export declare class ASWebAuthSessionWeb extends WebPlugin implements ASWebAuthS
     }): Promise<{
         value: string;
     }>;
+    startSession(options: {
+        urlString: string;
+        returnUrlScheme: string;
+    }): Promise<{
+        result: string;
+    }>;
+    cancelSession(): Promise<{
+        message: string;
+    }>;
 }

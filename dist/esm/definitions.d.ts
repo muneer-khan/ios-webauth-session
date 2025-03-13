@@ -4,4 +4,13 @@ export interface ASWebAuthSessionPlugin {
     }): Promise<{
         value: string;
     }>;
+    startSession(options: {
+        urlString: string;
+        returnUrlScheme: string;
+    }): Promise<{
+        result: string;
+    }>;
+    cancelSession(): Promise<{
+        message: string;
+    }>;
 }

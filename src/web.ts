@@ -7,4 +7,14 @@ export class ASWebAuthSessionWeb extends WebPlugin implements ASWebAuthSessionPl
     console.log('ECHO', options);
     return options;
   }
+
+  async startSession(options: { urlString: string, returnUrlScheme: string }): Promise<{ result: string }> {
+    console.log('Starting Auth Session with URL:', options.urlString);
+    return { result: 'Result: Authentication completed' };
+  }
+
+  async cancelSession(): Promise<{ message: string }>{
+    console.log('Cancelling Auth session');
+    return { message: 'Authentication session cancelled' };
+  }
 }

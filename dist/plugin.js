@@ -10,6 +10,14 @@ var capacitorASWebAuthSession = (function (exports, core) {
             console.log('ECHO', options);
             return options;
         }
+        async startSession(options) {
+            console.log('Starting Auth Session with URL:', options.urlString);
+            return { result: 'Result: Authentication completed' };
+        }
+        async cancelSession() {
+            console.log('Cancelling Auth session');
+            return { message: 'Authentication session cancelled' };
+        }
     }
 
     var web = /*#__PURE__*/Object.freeze({

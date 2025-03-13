@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`startSession(...)`](#startsession)
+* [`cancelSession()`](#cancelsession)
 
 </docgen-index>
 
@@ -31,6 +33,32 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 | **`options`** | <code>{ value: string; }</code> |
 
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
+
+--------------------
+
+
+### startSession(...)
+
+```typescript
+startSession(options: { urlString: string; returnUrlScheme: string; }) => Promise<{ result: string; }>
+```
+
+| Param         | Type                                                         |
+| ------------- | ------------------------------------------------------------ |
+| **`options`** | <code>{ urlString: string; returnUrlScheme: string; }</code> |
+
+**Returns:** <code>Promise&lt;{ result: string; }&gt;</code>
+
+--------------------
+
+
+### cancelSession()
+
+```typescript
+cancelSession() => Promise<{ message: string; }>
+```
+
+**Returns:** <code>Promise&lt;{ message: string; }&gt;</code>
 
 --------------------
 

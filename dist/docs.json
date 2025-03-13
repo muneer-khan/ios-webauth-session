@@ -20,6 +20,32 @@
         "docs": "",
         "complexTypes": [],
         "slug": "echo"
+      },
+      {
+        "name": "startSession",
+        "signature": "(options: { urlString: string; returnUrlScheme: string; }) => Promise<{ result: string; }>",
+        "parameters": [
+          {
+            "name": "options",
+            "docs": "",
+            "type": "{ urlString: string; returnUrlScheme: string; }"
+          }
+        ],
+        "returns": "Promise<{ result: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "startsession"
+      },
+      {
+        "name": "cancelSession",
+        "signature": "() => Promise<{ message: string; }>",
+        "parameters": [],
+        "returns": "Promise<{ message: string; }>",
+        "tags": [],
+        "docs": "",
+        "complexTypes": [],
+        "slug": "cancelsession"
       }
     ],
     "properties": []
